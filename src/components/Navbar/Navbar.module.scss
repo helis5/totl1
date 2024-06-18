@@ -1,11 +1,71 @@
-.header{
+.navbar{
+  width: 88px;
+  min-width: 88px;
+  position: fixed;
   display: grid;
-  grid-template-columns: 88px 1fr 1fr;
-  width: inherit;
-  height: 88px;
-  background-color: #2D5BE3;
-  .square {
-    width: 88px;
-    background-color: #224ED3;
+  justify-content: center;
+  padding-top: 20px;
+
+  //grid-template-rows: 3fr repeat(5, 1fr);
+  margin-top: 88px;
+  grid-area: n;
+  //min-height: 1000px;
+  div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    cursor: pointer;
+    .title{
+      display: none;
+      visibility: hidden;
+      width: 200px;
+      height: 25px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      margin-left: 5px;
+
+      /* Расположите текст подсказки */
+      //position: absolute;
+      z-index: 1;
+      //margin-left: 200px;
+
+      /* Исчезают в подсказке */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    //.title::after{
+    //  content: "";
+    //  //position: absolute;
+    //  top: 100%;
+    //  left: 50%;
+    //  margin-left: -5px;
+    //  border-width: 5px;
+    //  border-style: solid;
+    //  border-color: #555 transparent transparent transparent;
+    //}
+
+
+    svg{
+      background-size: inherit;
+    }
+  }
+  div:hover{
+    .title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: visible;
+      opacity: 1;
+    }
+    svg{
+      margin-left: 205px;
+    }
   }
 }

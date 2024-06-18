@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Red Sun Sushi/.idea/Red Sun Sushi.iml" filepath="$PROJECT_DIR$/../Red Sun Sushi/.idea/Red Sun Sushi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../learn_react_1/.idea/learn_react_1.iml" filepath="$PROJECT_DIR$/../learn_react_1/.idea/learn_react_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-red-sushi-sun/.idea/react-red-sushi-sun.iml" filepath="$PROJECT_DIR$/../react-red-sushi-sun/.idea/react-red-sushi-sun.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/totl1.iml" filepath="$PROJECT_DIR$/.idea/totl1.iml" />
     </modules>
   </component>

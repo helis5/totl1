@@ -9,5 +9,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="learn_react_1" />
+    <orderEntry type="module" module-name="Red Sun Sushi" />
+    <orderEntry type="module" module-name="react-red-sushi-sun" />
   </component>
 </module>

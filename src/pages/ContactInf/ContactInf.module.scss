@@ -1,21 +1,9 @@
-.main{
-  padding: 10px;
+.contactInf{
+  padding: 30px 100px 0 100px;
   grid-area: m;
   min-height: 1000px;
   background-color: #EFF4FB;
-  .news{
-    .item{
-      display: grid;
-      grid-template-columns: 1fr 10fr 1fr;
-      .date{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .number{
-          font-weight: bold;
-        }
-      }
-    }
+  .list{
+
   }
 }
