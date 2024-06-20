@@ -1,9 +1,15 @@
 .contactInf{
-  padding: 30px 100px 0 100px;
+  padding: 70px 150px 0 150px;
   grid-area: m;
   min-height: 1000px;
   background-color: #EFF4FB;
+  h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
   .list{
-
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
   }
 }

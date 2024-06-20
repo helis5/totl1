@@ -13,6 +13,14 @@ const Main = () => {
                     <p className={s.month}>июня</p>
                 </div>
             </div>
+            <div className={s.item}>
+                <img src="https://www.totl1.com/uploads/news/240614010404.jpg" alt=""/>
+                <p className={s.text}>Подведены итоги вступительной кампании</p>
+                <div className={s.date}>
+                    <p className={s.number}>14</p>
+                    <p className={s.month}>июня</p>
+                </div>
+            </div>
         </div>
     </div>
 }
