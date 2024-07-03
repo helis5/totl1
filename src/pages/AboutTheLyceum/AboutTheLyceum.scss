@@ -1,8 +1,5 @@
 .main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 70px 0 0 0;
+  padding: 70px 150px 0 150px;
   grid-area: m;
   min-height: 1000px;
   background-color: #EFF4FB;
@@ -11,7 +8,6 @@
     margin-bottom: 10px;
   }
   .news{
-    width: 1300px;
     .item{
       display: grid;
       grid-template-columns: 1fr 6fr 1fr;
