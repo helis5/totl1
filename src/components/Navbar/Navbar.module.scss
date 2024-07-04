@@ -1,9 +1,11 @@
 .navbar{
-
   position: fixed;
   display: grid;
   justify-content: center;
   grid-area: n;
+  grid-template-rows: 88px 1fr;
+  height: 100%;
+  z-index: 1000;
   .bg_m{
     width: 88px;
     height: 88px;
@@ -20,8 +22,10 @@
       border-radius: 10px;
     }
   }
-  .list{
-
+  .bg_m_2{
+    background-color: red;
+  }
+  .items_1{
     div{
 
       width: 88px;
@@ -39,7 +43,7 @@
         width: 200px;
         min-width: 200px;
         height: 25px;
-        background-color: #555;
+        background-color: #2D5BE3;
         color: #fff;
         text-align: center;
         padding: 5px 0;
@@ -55,22 +59,10 @@
         opacity: 0;
         transition: opacity 0.3s;
       }
-
-      //.title::after{
-      //  content: "";
-      //  //position: absolute;
-      //  top: 100%;
-      //  left: 50%;
-      //  margin-left: -5px;
-      //  border-width: 5px;
-      //  border-style: solid;
-      //  border-color: #555 transparent transparent transparent;
-      //}
-
-
       svg{
         background-size: inherit;
         height: 30px;
+        width: 30px;
       }
     }
     div:hover{
@@ -84,8 +76,59 @@
       svg{
         min-width: 30px;
         margin-left: 205px;
+        height: 30px;
+        width: 30px;
       }
     }
+  }
+
+
+  .items_2{
+    transition: 0.1s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+    background-color: white;
+    div{
+
+      width: 264px;
+      min-width: 88px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      //justify-content: center;
+      //align-items: center;
+      padding-top: 5px;
+      cursor: pointer;
+
+      .title{
+        width: 200px;
+        min-width: 200px;
+        height: 25px;
+        //background-color: #555;
+        //color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        margin-left: 5px;
+
+        /* Расположите текст подсказки */
+        //position: absolute;
+        z-index: 10;
+        //margin-left: 200px;
+
+        /* Исчезают в подсказке */
+
+      }
+      svg{
+        background-size: inherit;
+        height: 30px;
+        width: 30px;
+      }
+    }
+
   }
 
 }

@@ -11,7 +11,8 @@
     margin-bottom: 10px;
   }
   .news{
-    width: 1300px;
+    width: 100%;
+    max-width: 1200px;
     .item{
       display: grid;
       grid-template-columns: 1fr 6fr 1fr;

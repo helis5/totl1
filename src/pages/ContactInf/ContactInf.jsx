@@ -15,7 +15,7 @@ const ContactInf = () => {
             <p><b>Адрес сайта  лицея:</b> <a href="https://www.totl1.com">totl1.com</a></p>
             <p><b>Страница лицея в vk.com:</b> <a href="https://vk.com/totl_forever">vk.com/totl_forever</a></p>
             <br/>
-                <div style={{ position: 'relative', overflow: 'hidden' }}>
+            <div className={s.map} style={{ position: 'relative', overflow: 'hidden' }}>
                 <a
                     href="https://yandex.ru/maps/org/tiraspolskiy_obshcheobrazovatelny_teoreticheski_litsey/197940316288/?utm_medium=mapframe&utm_source=maps"
                     style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px' }}
