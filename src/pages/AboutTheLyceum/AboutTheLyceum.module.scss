@@ -6,7 +6,28 @@
   grid-area: m;
   min-height: 1000px;
   background-color: #EFF4FB;
+  .links{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 50px;
 
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 10px;
+      background-color: #2D5BE3;
+      color: white;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    a:hover{
+      box-shadow: 8px 10px 20px 2px #BEC7E3;
+      transition-duration: 50ms;
+    }
+
+  }
   .list{
     width: 100%;
     max-width: 1200px;

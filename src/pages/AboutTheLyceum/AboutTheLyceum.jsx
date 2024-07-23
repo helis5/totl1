@@ -5,7 +5,11 @@ import state from "../../state";
 
 const AboutTheLyceum = () => {
     return <div className={s.aboutTheLyceum}>
-
+        <div className={s.links}>
+            <a href="/aboutTheLyceum">О лицее</a>
+            <a href="/aboutTheLyceum/history">История лицея </a>
+            <a href="/aboutTheLyceum">Направления деятельности</a>
+        </div>
         <div className={s.list}>
             <p>Учредитель лицея – Управление народного образования Государственной администрации г. Тирасполя</p>
             <p><strong>Организация учебного процесса:</strong><br/>

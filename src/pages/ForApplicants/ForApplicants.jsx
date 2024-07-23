@@ -5,6 +5,10 @@ import state from "../../state";
 
 const ForApplicants = () => {
     return <div className={s.forApplicants}>
+        <div className={s.links}>
+            <a href="/forApplicants">Поступающим</a>
+            <a href="/forApplicants/admissionRules">Правила приёма</a>
+        </div>
         <div className={s.list}>
             <h1>Информация поступающим в лицей</h1>
             <p>     Всем желающим поступить в Тираспольский общеобразовательный теоретический лицей: <hr/>
