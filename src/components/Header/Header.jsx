@@ -11,7 +11,6 @@ const Header = () => {
         <header className={s.header}>
             <Logo />
             <Sections />
-
         </header>
     )
 

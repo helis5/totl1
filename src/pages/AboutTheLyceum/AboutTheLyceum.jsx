@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './AboutTheLyceum.module.scss';
-import MyProvider from "../../state";
-import state from "../../state";
+import LightStyles from "../LightStyles.module.scss";
+import DarkStyles from "../DarkStyles.module.scss";
+import {ThemeContext} from "../../ThemeContext";
+import classNames from "classnames";
 
 const AboutTheLyceum = () => {
-    return <div className={s.aboutTheLyceum}>
-        <div className={s.links}>
+
+    // Изменение темы
+    const { theme } = useContext(ThemeContext);
+    const styles = theme === 'light' ? LightStyles : DarkStyles;
+
+    return <div className={classNames(s.aboutTheLyceum, styles.container)}>
+        <div className={classNames(s.links, styles.container)}>
             <a href="/aboutTheLyceum">О лицее</a>
             <a href="/aboutTheLyceum/history">История лицея </a>
             <a href="/aboutTheLyceum">Направления деятельности</a>

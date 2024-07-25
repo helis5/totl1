@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './ContactInf.module.scss';
+import classNames from "classnames";
+import {ThemeContext} from "../../ThemeContext";
+import LightStyles from "../LightStyles.module.scss";
+import DarkStyles from "../DarkStyles.module.scss";
 
 const ContactInf = () => {
-    return <div className={s.contactInf}>
+
+    // Изменение темы
+    const { theme } = useContext(ThemeContext);
+    const styles = theme === 'light' ? LightStyles : DarkStyles;
+
+    return <div className={classNames(s.contactInf, styles.container)}>
 
         <div className={s.list}>
             <h1>Контактные данные </h1>

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import s from './App.module.scss';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,22 +11,24 @@ import History from "./pages/AboutTheLyceum/History/History";
 import AboutTheLyceum from "./pages/AboutTheLyceum/AboutTheLyceum";
 
 function App() {
-  return (
-    <div className={s.App}>
-        <Header />
-        <Navbar />
-        <BrowserRouter>
-            <Routes>
-                <Route index element={<Main />} />
-                <Route path='contactInf' element={<ContactInf />} />
-                <Route path='aboutTheLyceum' element={<AboutTheLyceum/>}/>
-                <Route path='aboutTheLyceum/history' element={<History />} />
-                <Route path='forApplicants' element={<ForApplicants />} />
-                <Route path='educationalActivities' element={<EducationalActivities />} />
-            </Routes>
-        </BrowserRouter>
-    </div>
-  );
+    return (
+
+            <div className={s.App}>
+                <Header/>
+                <Navbar/>
+                <BrowserRouter>
+                    <Routes>
+                        <Route index element={<Main/>}/>
+                        <Route path='contactInf' element={<ContactInf/>}/>
+                        <Route path='aboutTheLyceum' element={<AboutTheLyceum/>}/>
+                        <Route path='aboutTheLyceum/history' element={<History/>}/>
+                        <Route path='forApplicants' element={<ForApplicants/>}/>
+                        <Route path='educationalActivities' element={<EducationalActivities/>}/>
+                    </Routes>
+                </BrowserRouter>
+            </div>
+
+    );
 }
 
 export default App;

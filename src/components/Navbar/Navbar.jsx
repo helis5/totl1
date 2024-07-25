@@ -1,6 +1,9 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import s from './Navbar.module.scss';
 import classNames from "classnames";
+import {ThemeContext} from "../../ThemeContext";
+import LightStyles from "./LightStyles.module.scss";
+import DarkStyles from "./DarkStyles.module.scss";
 
 const Navbar = () => {
 
@@ -11,6 +14,11 @@ const Navbar = () => {
     const handleClick = () => {
         setIsToggled(!isToggled); // Меняем состояние на противоположное
     };
+
+    // Изменение темы
+    const { theme } = useContext(ThemeContext);
+    const styles = theme === 'light' ? LightStyles : DarkStyles;
+
 
     return (
         <div className={s.navbar}>
@@ -28,7 +36,7 @@ const Navbar = () => {
                 </button>)}
 
             {isToggled ? (
-                <div className={s.items_2}>
+                <div className={classNames(s.items_2, styles.container)}>
                     <div>
                         <span className={s.title}>Контактная информация</span>
                         <a href="/contactInf">
@@ -122,7 +130,7 @@ const Navbar = () => {
                     </div>
                 </div>
             ) : (
-                <div className={s.items_1}>
+                <div className={classNames(s.items_1, styles.container)}>
                     <div>
                         <span className={s.title}>Контактная информация</span>
                         <a href="/contactInf">
