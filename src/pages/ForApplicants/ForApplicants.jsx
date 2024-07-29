@@ -1,11 +1,21 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './ForApplicants.module.scss';
 import MyProvider from "../../state";
 import state from "../../state";
+import {ThemeContext} from "../../ThemeContext";
+import LightStyles from "../LightStyles.module.scss";
+import DarkStyles from "../DarkStyles.module.scss";
+import classNames from "classnames";
 
 const ForApplicants = () => {
-    return <div className={s.forApplicants}>
-        <div className={s.links}>
+
+    // Изменение темы
+    const { theme } = useContext(ThemeContext);
+    const styles = theme === 'light' ? LightStyles : DarkStyles;
+
+
+    return <div className={ classNames(s.forApplicants, styles.container)}>
+        <div className={classNames(s.links, styles.color1)}>
             <a href="/forApplicants">Поступающим</a>
             <a href="/forApplicants/admissionRules">Правила приёма</a>
         </div>

@@ -12,7 +12,7 @@ const AboutTheLyceum = () => {
     const styles = theme === 'light' ? LightStyles : DarkStyles;
 
     return <div className={classNames(s.aboutTheLyceum, styles.container)}>
-        <div className={classNames(s.links, styles.container)}>
+        <div className={classNames(s.links, styles.color1)}>
             <a href="/aboutTheLyceum">О лицее</a>
             <a href="/aboutTheLyceum/history">История лицея </a>
             <a href="/aboutTheLyceum">Направления деятельности</a>

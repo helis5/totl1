@@ -1,4 +1,8 @@
 .container{
   background-color: white;
   color: black;
+
+  span {
+    box-shadow: 10px 0 20px 5px white;
+  }
 }

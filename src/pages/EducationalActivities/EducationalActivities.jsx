@@ -1,11 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './EducationalActivities.module.scss';
 import {Outlet} from "react-router-dom";
+import {ThemeContext} from "../../ThemeContext";
+import LightStyles from "../LightStyles.module.scss";
+import DarkStyles from "../DarkStyles.module.scss";
+import classNames from "classnames";
 
 const EducationalActivities = () => {
+
+    // Изменение темы
+    const { theme } = useContext(ThemeContext);
+    const styles = theme === 'light' ? LightStyles : DarkStyles;
+
     return (
-        <div className={s.educationalActivities}>
-            <div className={s.links}>
+        <div className={classNames(s.educationalActivities, styles.container)}>
+            <div className={classNames(s.links, styles.color1)}>
                 <a href="/educationalActivities">Учебная деятельность</a>
                 <a href="/educationalActivities">Нормативные документы</a>
                 <a href="/educationalActivities">ЕГЭ</a>

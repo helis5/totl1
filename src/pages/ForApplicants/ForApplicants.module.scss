@@ -5,7 +5,6 @@
   padding: 70px 0 0 0;
   grid-area: m;
   min-height: 1000px;
-  background-color: #EFF4FB;
   .links{
     display: flex;
     align-items: center;
@@ -22,15 +21,10 @@
       border-radius: 10px;
       margin-right: 10px;
     }
-    a:hover{
-      box-shadow: 8px 10px 20px 2px #BEC7E3;
-      transition-duration: 50ms;
-    }
   }
   .list{
     width: 100%;
     max-width: 1200px;
-    background-color: white;
     border-radius: 10px;
     padding: 10px;
     h1{
