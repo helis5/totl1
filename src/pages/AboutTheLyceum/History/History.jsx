@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './History.module.scss';
+import {ThemeContext} from "../../../ThemeContext";
+import LightStyles from "../../LightStyles.module.scss";
+import DarkStyles from "../../DarkStyles.module.scss";
+import classNames from "classnames";
 
 const History = () => {
-    return <div className={s.history}>
-        <div className={s.links}>
+
+    // Изменение темы
+    const { theme } = useContext(ThemeContext);
+    const styles = theme === 'light' ? LightStyles : DarkStyles;
+
+    return <div className={classNames(s.history, styles.container)}>
+        <div className={classNames(s.links, styles.color1)}>
             <a href="/aboutTheLyceum">О лицее</a>
             <a href="/aboutTheLyceum/history">История лицея </a>
             <a href="/aboutTheLyceum">Направления деятельности</a>
