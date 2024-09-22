@@ -6,7 +6,7 @@ import ThemeToggle from "../../ThemeToggle/ThemeToggle";
 const Sections = () => {
 
     return <div className={s.sections}>
-        <div>smth</div>
+        <div>ТИРАСПОЛЬСКИЙ ОБЩЕОБРАЗОВАТЕЛЬНЫЙ ТЕОРЕТИЧЕСКИЙ ЛИЦЕЙ</div>
         <ThemeToggle />
     </div>
 }

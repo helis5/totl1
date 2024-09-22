@@ -1,0 +1,68 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  border-radius: 10px 10px 0 0 ;
+  padding: 10px;
+  .button {
+    width: 100px;
+    background-color: rgba(76, 175, 80, 0); /* Зелёный фон */
+    color: white; /* Белый текст */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(79, 79, 79, 0.07);
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  .imageContainer{
+    position: relative;
+    width: 750px; /* Ширина изображения */
+    height: 332px; /* Высота изображения */
+    overflow: hidden;
+    .image {
+      width: inherit;
+      height: inherit;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

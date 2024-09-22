@@ -9,6 +9,7 @@ import ForApplicants from "./pages/ForApplicants/ForApplicants";
 import EducationalActivities from "./pages/EducationalActivities/EducationalActivities";
 import History from "./pages/AboutTheLyceum/History/History";
 import AboutTheLyceum from "./pages/AboutTheLyceum/AboutTheLyceum";
+import './global.scss';
 
 function App() {
     return (
