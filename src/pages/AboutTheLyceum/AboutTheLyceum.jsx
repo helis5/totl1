@@ -15,7 +15,7 @@ const AboutTheLyceum = () => {
         <div className={classNames(s.links, styles.color1)}>
             <a href="/aboutTheLyceum">О лицее</a>
             <a href="/aboutTheLyceum/history">История лицея </a>
-            <a href="/aboutTheLyceum">Направления деятельности</a>
+            <a href="/aboutTheLyceum/areasOfActivity">Направления деятельности</a>
         </div>
         <div className={s.list}>
             <p>Учредитель лицея – Управление народного образования Государственной администрации г. Тирасполя</p>

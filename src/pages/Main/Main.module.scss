@@ -7,13 +7,14 @@
   min-height: 1000px;
   h1{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 0 0 20px;
   }
   .news{
     width: 100%;
     max-width: 1200px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     padding: 10px;
+    margin-bottom: 30px;
     .item{
       display: grid;
       grid-template-columns: 1fr 6fr 1fr;

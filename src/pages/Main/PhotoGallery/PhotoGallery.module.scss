@@ -4,21 +4,27 @@
   width: 100%;
   height: auto;
   max-width: 1200px;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px;
   padding: 10px;
+  margin-bottom: 30px;
   .button {
     width: 100px;
     background-color: rgba(76, 175, 80, 0); /* Зелёный фон */
     color: white; /* Белый текст */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 15px;
     margin: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-
+    svg{
+      display: none;
+    }
     &:hover {
       background-color: rgba(79, 79, 79, 0.07);
+      svg{
+        display: inline;
+      }
     }
 
     &:disabled {
@@ -31,6 +37,7 @@
     width: 750px; /* Ширина изображения */
     height: 332px; /* Высота изображения */
     overflow: hidden;
+    border-radius: 10px;
     .image {
       width: inherit;
       height: inherit;

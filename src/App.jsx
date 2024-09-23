@@ -10,6 +10,8 @@ import EducationalActivities from "./pages/EducationalActivities/EducationalActi
 import History from "./pages/AboutTheLyceum/History/History";
 import AboutTheLyceum from "./pages/AboutTheLyceum/AboutTheLyceum";
 import './global.scss';
+import AreasOfActivity from "./pages/AboutTheLyceum/AreasOfActivity/AreasOfActivity";
+import AdmissionRules from "./pages/ForApplicants/AdmissionRules/AdmissionRules";
 
 function App() {
     return (
@@ -23,7 +25,9 @@ function App() {
                         <Route path='contactInf' element={<ContactInf/>}/>
                         <Route path='aboutTheLyceum' element={<AboutTheLyceum/>}/>
                         <Route path='aboutTheLyceum/history' element={<History/>}/>
+                        <Route path='aboutTheLyceum/areasOfActivity' element={<AreasOfActivity/>}/>
                         <Route path='forApplicants' element={<ForApplicants/>}/>
+                        <Route path='forApplicants/admissionRules' element={<AdmissionRules/>}/>
                         <Route path='educationalActivities' element={<EducationalActivities/>}/>
                     </Routes>
                 </BrowserRouter>

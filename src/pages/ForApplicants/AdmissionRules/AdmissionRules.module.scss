@@ -1,4 +1,4 @@
-.educationalActivities{
+.forApplicants{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,13 +27,44 @@
     max-width: 1200px;
     border-radius: 10px;
     padding: 10px;
-    h1{
-      font-size: 20px;
-      margin-bottom: 10px;
+    .mainTitle {
+      text-align: center;
+      font-size: 18px;
+
+      span {
+        font-size: 16px;
+      }
     }
+
+    img{
+      margin: 20px;
+    }
+
     p{
-      text-indent: 10px;
-      margin-bottom: 10px;
+      margin: 10px;
+    }
+
+    .description {
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    ol {
+      margin: 10px 20px;
+    }
+
+    .link {
+      color: rgba(59, 59, 239, 0.84);
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
