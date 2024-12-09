@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Red Sun Sushi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../learn_react_1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../react-red-sushi-sun" vcs="Git" />
   </component>
 </project>

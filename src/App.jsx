@@ -15,7 +15,6 @@ import AdmissionRules from "./pages/ForApplicants/AdmissionRules/AdmissionRules"
 
 function App() {
     return (
-
             <div className={s.App}>
                 <Header/>
                 <Navbar/>
@@ -32,7 +31,6 @@ function App() {
                     </Routes>
                 </BrowserRouter>
             </div>
-
     );
 }
 

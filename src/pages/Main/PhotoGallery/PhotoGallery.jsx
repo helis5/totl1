@@ -3,16 +3,22 @@ import styles from './PhotoGallery.module.scss';
 
 const PhotoGallery = () => {
     const photos = [
-        'https://www.totl1.com/uploads/slider/sl3.jpg',
-        'https://www.totl1.com/uploads/slider/sl8.jpg',
-        'https://www.totl1.com/uploads/slider/sl9.jpg',
-        'https://www.totl1.com/uploads/slider/sl10.jpg',
-        'https://www.totl1.com/uploads/slider/sl11.jpg',
-        'https://www.totl1.com/uploads/slider/sl12.jpg',
-        'https://www.totl1.com/uploads/slider/sl13.jpg',
-        'https://www.totl1.com/uploads/slider/sl14.jpg',
-        'https://www.totl1.com/uploads/slider/sl15.jpg',
-        'https://www.totl1.com/uploads/slider/2.jpg'
+        // 'https://www.totl1.com/uploads/slider/sl3.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl8.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl9.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl10.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl11.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl12.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl13.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl14.jpg',
+        // 'https://www.totl1.com/uploads/slider/sl15.jpg',
+        'https://www.totl1.com/uploads/slider/2.jpg',
+        'https://i.imgur.com/2VI3yC3.jpeg',
+        'https://i.imgur.com/pnaLnxy.jpeg',
+        'https://i.imgur.com/Dvft7Qy.jpeg',
+        'https://i.imgur.com/6Gwa9ET.jpeg',
+        'https://i.imgur.com/7iLpWbL.jpeg',
+        'https://i.imgur.com/FYuMmJm.jpeg',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
